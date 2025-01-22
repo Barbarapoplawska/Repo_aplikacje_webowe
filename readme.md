@@ -1,1 +1,3 @@
 # Robię lab 1 po raz kolejny...
+
+patrze czy działa
