@@ -1,1 +1,7 @@
+.gitignore
+_pycache_/
 virual_env
+db.sqlite3
+venv/
+*._pyc
+.DS_Store
