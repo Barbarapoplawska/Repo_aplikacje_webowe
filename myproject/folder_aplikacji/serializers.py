@@ -109,3 +109,10 @@ class OsobaSerializer(serializers.ModelSerializer):
         model = Osoba
         fields = ['id', 'imie', 'nazwisko', 'plec', 'stanowisko', 'data_dodania']
         read_only_fields = ['id']
+
+
+class TeamSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Team
+        fields = ['id', 'name', 'country']
+        read_only_fields = ['id']

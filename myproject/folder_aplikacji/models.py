@@ -52,6 +52,12 @@ class Osoba(models.Model):
         return f"{self.imie} {self.nazwisko}" #f" pozwala nam wrzucać bezpośrednio w stringi
     class Meta:
         ordering = ['nazwisko']
+        permissions = [
+            ('view_person_other_owner', 'Pozwala zobaczyc modele Osoba innych włascicieli'),
+        ]
+
+
+
                     
 class Stanowisko(models.Model):
     nazwa = models.CharField(max_length=80, blank = False, null = False)
